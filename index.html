@@ -4,11 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: black;
+        }
+        #container {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        #dad-joke {
+            text-align: center;
+            font-weight: bold;
+            font-size: 0.8rem;
+            margin: 0 0.3rem 0 0.3rem;
+            color: white;
+        }
+        #image {
+            margin: 0.5em;
+            display: flex;
+            justify-content: center;
+            height: 350px;
+            width: 350px;
+            object-fit: cover;
+        }
+        #get-stuff {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+        }
+
+    </style>
 </head>
 <script src="main.js" defer></script>
 <body>  
+    <audio autoplay loop>
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+    <div id="ext-container">
     <img id="image">
     <p id="dad-joke"></p>
-    <button id="get-stuff">Press Me</button>
+    <button id="get-stuff">Click Me!</button>
+    </div>
 </body>
 </html>

@@ -17,9 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
         .then((data)=>{
           data.forEach((e)=>{
             const image = document.getElementById('image')
-            image.style.height = "500px"
-            image.style.width = "500px"
-            image.style.objectFit = "contain"
             image.src = e.url
           })
       })
